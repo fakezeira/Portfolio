@@ -1,0 +1,434 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  font-size: 60%;
+  overflow-x: hidden;
+}
+:root {
+  --bg-color: #080808;
+  --second-bg-color: #001005;
+  --text-color: white;
+  --main-color: #00ff51;
+}
+
+body{
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+/*Config Estilo Cabeçalho*/
+header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 4rem 12%;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+/*Config Estilo icon*/
+#menu-icon{
+  font-size: 3.6rem;
+  color: var(--main-color);
+  display: none;
+}
+
+/*Config Estilo logo*/
+.logo{
+  font-size: 3rem;
+  color: var(--text-color);
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+/*Config Estilo logo interação*/
+.logo:hover{
+  transform: scale(1.1);
+}
+
+/*Config Estilo span*/
+header a span{
+  color: var(--main-color);
+}
+
+/*Config Estilo barra de navegação */
+.Barra_navegação a{
+  font-size: 1.8rem;
+  color: var(--text-color);
+  margin-left: 4rem;
+  font-weight: 500;
+  border-bottom: 3px solid transparent;
+  transition: 0.3 ease;
+}
+
+.Barra_navegação a:hover{
+  border-bottom: 3px solid var(--main-color);
+  color: var(--main-color);
+}
+/*fim das configs cabeçalho*/
+
+/*início das configs home*/
+section{
+  min-height: 100vh;
+  padding: 10rem 12%;
+}
+
+.home{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15rem;
+}
+
+.home-content{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.home-content h1{
+  font-size: 7rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  line-height: 1;
+}
+
+.home-content h1 span{
+  color: var(--main-color);
+}
+
+.home-content h3{
+  font-size: 4rem;
+  margin: 1rem 0;
+}
+
+.home-content p{
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.8;
+}
+
+/*Config Estilo img perfil*/
+#home-img{
+  width: 32vw;
+  border-radius: 50%;
+  box-shadow: 0 0 25px var(--main-color);
+  transition: 0.4s ease-in-out; 
+}
+
+/*Config Estilo img perfil interação*/
+#home-img:hover{
+  box-shadow: 0 0 25px var(--main-color),
+              0 0 50px var(--main-color),
+              0 0 100px var(--main-color);
+}
+
+/*Config Estilo social icons*/
+.social-icons a{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  padding: 1rem;
+  background-color: transparent;
+  border: 2px solid var(--main-color);
+  border-radius: 50%;
+  color: var(--main-color);
+  margin: 3rem 0.5rem;
+  transition: 0.3 ease;
+}
+
+/*Config Estilo social icons interação*/
+.social-icons a:hover{
+  color: var(--text-color);
+  background-color: var(--main-color);
+  transform: scale(1.2) translateY(-5px);
+  box-shadow: 0 0 25px var(--main-color);
+  transition: 0.2s;
+}
+/*fim das configs home*/
+
+/*início das configs sobre*/
+.sobre{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+  background-color: var(--second-bg-color);
+}
+
+.img-sobre img{
+  width: 32vw;
+  border-radius: 50%;
+  box-shadow: 0 0 25px var(--main-color);
+  transition: 0.4s ease-in-out;
+}
+
+.img-sobre img:hover{
+  box-shadow: 0 0 25px var(--main-color),
+              0 0 50px var(--main-color),
+              0 0 100px var(--main-color);
+}
+
+.sobre-content h2{
+  font-size: 7rem;
+  text-align: left;
+}
+
+.sobre-content p{
+  font-size: 1.8rem;
+}
+
+.sobre-content .btn{
+  margin: 3rem 0;
+}
+
+/*Config Estilo botão (btn)*/
+.btn{
+  display: flex;
+  max-width: 190px;
+  justify-content: center;
+  padding: 1rem 3rem;
+  background-color: var(--main-color);
+  box-shadow: 0 0 25px var(--main-color);
+  border-radius: 3rem;
+  font-size: 1.8rem;
+  color: black;
+  border: 2px solid transparent;
+  font-weight: 600;
+  transition: 0.3s ease-in-out;
+}
+
+/*Config Estilo botão (btn) interação*/
+.btn:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 25px var(--main-color),
+              0 0 50px var(--main-color);
+}
+
+/*Config Estilo da scrollbar*/
+::-webkit-scrollbar{
+  width: 10px;
+}
+::-webkit-scrollbar-thumb{
+  background-color: var(--main-color);
+}
+::-webkit-scrollbar-track{
+  background-color: var(--bg-color);
+}
+
+/*Config Estilo Projetos*/
+.Cabecalho-projetos{
+  text-align: center;
+  font-size: 7rem;
+  margin: 5rem 0;
+}
+
+.projetos-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.projeto-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--main-color);
+  height: 600px;
+  width: 100%;
+  border-radius: 3rem;
+  border: 5px solid var(--main-color);
+  transition: 0.4s ease-in-out;
+  object-fit: contain;
+  overflow: hidden; /*Ocultar partes que ultrapassam o container*/
+  position: relative;
+}
+
+.projeto-box:hover {
+  background-color: var(--second-bg-color);
+  transform: scale(1.03);
+}
+
+.projeto-box .projeto-info {
+  position: relative; 
+  width: 100%;
+  height: 100%;
+}
+
+.projeto-box .projeto-info .img-projeto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /*Para imagem cobrir o espaço, sem distorcer*/
+  transition: 0.5s;
+}
+
+.projeto-box .projeto-info .img-projeto:hover {
+  opacity: 0.1;
+  transform: scale(1.03);
+}
+
+.projeto-info .descricao{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--text-color);
+  font-size: 24px;
+  font-weight: 900;
+  opacity: 0; /*inicialmente invisível*/
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.projeto-info .btn_projeto {
+  position: absolute;
+  left: 50%;
+  top: 90%;
+  transform: translate(-50%, -50%); 
+  display: flex;
+  gap: 1rem;
+  opacity: 0; 
+  transition: opacity 0.3s ease;
+
+}
+
+.projeto-box:hover .descricao{
+  opacity: 1; /*fica visível pós hover do projeto-box*/
+}
+
+.projeto-box:hover .btn_projeto {
+  opacity: 1; /*mesma lógica utilizada para o h4*/
+}
+
+.btn_projeto a{
+  color: black;
+  font-weight: 600px;
+}
+
+/*Config Estilo Footer*/
+.footer{
+  background-color: var(--second-bg-color);
+  padding: 50px 0; 
+}
+
+.footer .social-icons{
+  text-align: center;
+}
+
+.footer ul{
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.footer ul li{
+  display: inline-block;
+}
+
+.footer ul li a{
+  color: var(--text-color);
+  border-bottom: 3px solid transparent;
+  transition: 0.3s ease-in-out;
+}
+
+.footer ul li a:hover{
+  border-bottom: 3px solid var(--main-color);
+}
+
+.footer .copyright{
+  text-align: center;
+  margin-top: 40px;
+  font-size: 16px; 
+}
+
+
+/*Configuração de navegação para dispositivos mobiles*/
+@media(max-width:1024px) {
+  #menu-icon {
+    display: block;
+  }
+
+  .logo{
+    font-size: 2.5rem;
+  }
+
+  .Barra_navegação {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 50%;
+    padding: 1rem 3rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-left: 2px solid var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+    border-bottom-left-radius: 2rem;
+    display: none;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .Barra_navegação.ativo {
+    display: block;
+  }
+
+  .Barra_navegação a {
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 0;
+    color: var(--text-color);
+  }
+
+  /* Config responsiv. para home */
+  .home {
+    flex-direction: column-reverse;
+    margin: 5rem 0;
+    gap: 5rem;
+  }
+
+  .home-content {
+    align-items: center;
+    text-align: center;
+  }
+
+  #home-img {
+    width: 52vw;
+  }
+
+  /* Config responsiv. para sobre */
+  .sobre {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  #img-sobre {
+    width: 52vw;
+  }
+
+  /*responsividade dos botões na parte dos projetos*/
+  .projeto-info .btn_projeto {
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%, -50%); 
+    display: flex;
+    gap: 1rem;
+    opacity: 1; 
+    transition: opacity 0.3s ease;
+  }
+}
