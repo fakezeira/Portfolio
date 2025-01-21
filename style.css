@@ -298,27 +298,22 @@ section{
   pointer-events: none;
 }
 
-.projeto-info .btn_projeto {
-  position: absolute;
-  left: 50%;
-  top: 90%;
-  transform: translate(-50%, -50%); 
-  display: flex;
-  gap: 1rem;
-  opacity: 0; 
-  transition: opacity 0.3s ease;
-
-}
-
 .projeto-box:hover .descricao{
   opacity: 1; /*fica visível pós hover do projeto-box*/
 }
 
-.projeto-box:hover .btn_projeto {
-  opacity: 1; /*mesma lógica utilizada para o h4*/
+/*posicionamento do botão que se encontra na div projetos*/
+.btn_projeto { 
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 88%;
+  left: 20%;
+  gap: 16px;
 }
 
-.btn_projeto a{
+/*estilo config link*/
+a{
   color: black;
   font-weight: 600px;
 }
@@ -418,6 +413,12 @@ section{
 
   #img-sobre {
     width: 52vw;
+  }
+
+  .projeto-box{
+    display: flex;
+    justify-content: center;
+    right: 13px;
   }
 
   /*responsividade dos botões na parte dos projetos*/
