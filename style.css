@@ -22,6 +22,29 @@ html {
 body{
   background-color: var(--bg-color);
   color: var(--text-color);
+  position: relative;
+}
+
+#buttonFixed{
+  background: var(--second-bg-color);
+  border: solid 2px var(--main-color);
+  position: fixed;
+  right: 15px;
+  top: 88%;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  color: white;
+  font-size: 5.9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#buttonFixed:hover{
+  scale: 110%;
+  transition: 250ms;
+  cursor: pointer;
 }
 
 /*Config Estilo Cabeçalho*/
@@ -48,7 +71,7 @@ header{
 
 /*Config Estilo logo*/
 .logo{
-  font-size: 3rem;
+  font-size: 4.5rem;
   color: var(--text-color);
   font-weight: 800;
   cursor: pointer;
@@ -67,7 +90,7 @@ header a span{
 
 /*Config Estilo barra de navegação */
 .Barra_navegação a{
-  font-size: 1.8rem;
+  font-size: 2.5rem;
   color: var(--text-color);
   margin-left: 4rem;
   font-weight: 500;
@@ -431,5 +454,13 @@ a{
     gap: 1rem;
     opacity: 1; 
     transition: opacity 0.3s ease;
+  }
+
+  /*Removendo o botao que volta para a posição inicial da página*/
+  #buttonFixed{
+    z-index: -1;
+    border: none;
+    background-color: transparent;
+    color: transparent;
   }
 }
