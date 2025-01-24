@@ -296,14 +296,14 @@ section{
   height: 100%;
 }
 
-.projeto-box .projeto-info .img-projeto {
+.img-projeto {
   width: 100%;
   height: 100%;
   object-fit: cover; /*Para imagem cobrir o espaço, sem distorcer*/
   transition: 0.5s;
 }
 
-.projeto-box .projeto-info .img-projeto:hover {
+.img-projeto:hover{
   opacity: 0.1;
   transform: scale(1.03);
 }
@@ -333,6 +333,11 @@ section{
   top: 88%;
   left: 20%;
   gap: 16px;
+}
+
+.btn_projeto .btn:hover{
+  background-color: var(--second-bg-color);
+  color: var(--main-color);
 }
 
 /*estilo config link*/
