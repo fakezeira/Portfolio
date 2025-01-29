@@ -328,10 +328,10 @@ section{
 /*posicionamento do botão que se encontra na div projetos*/
 .btn_projeto {
   position: absolute;
-  top: 0;
-  left: 20%;
-  gap: 16px;
-  padding: 10px 30px;
+  display: flex;
+  top: 84%;
+  gap: 12px;
+  padding: 10px 100px 10px 100px;
   background-color: rgba(0, 0, 0, 0.6);
 }
 
