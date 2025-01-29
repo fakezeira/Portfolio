@@ -326,13 +326,13 @@ section{
 }
 
 /*posicionamento do botão que se encontra na div projetos*/
-.btn_projeto { 
-  display: flex;
-  justify-content: center;
+.btn_projeto {
   position: absolute;
-  top: 88%;
+  top: 0;
   left: 20%;
   gap: 16px;
+  padding: 10px 30px;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .btn_projeto .btn:hover{
@@ -463,9 +463,6 @@ a{
 
   /*Removendo o botao que volta para a posição inicial da página*/
   #buttonFixed{
-    z-index: -1;
-    border: none;
-    background-color: transparent;
-    color: transparent;
+    display: none;
   }
 }
