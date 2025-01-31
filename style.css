@@ -329,9 +329,12 @@ section{
 .btn_projeto {
   position: absolute;
   display: flex;
+  justify-content: center;
   top: 88%;
-  left: 18%;
   gap: 12px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 7px 0;
 }
 
 .btn_projeto .btn:hover{
@@ -443,9 +446,7 @@ a{
   }
 
   .projeto-box{
-    display: flex;
-    justify-content: center;
-    right: 13px;
+    right: 22px;
   }
 
   /*responsividade dos botões na parte dos projetos*/
