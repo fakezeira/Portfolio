@@ -445,8 +445,11 @@ a{
     width: 52vw;
   }
 
-  .projeto-box{
-    right: 22px;
+  #projetos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 
   /*responsividade dos botões na parte dos projetos*/
