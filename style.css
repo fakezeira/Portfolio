@@ -348,9 +348,86 @@ a{
   font-weight: 600px;
 }
 
+/*Config section contato*/
+#contato{
+  background-color: var(--second-bg-color);
+}
+
+#contato h2{
+  text-align: center;
+  font-size: 7rem;
+  margin: 5rem 0;
+  margin-bottom: 14%;
+}
+
+#inputsContatoGeral{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+#inputNomeEmail{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  gap: 20px;
+}
+
+.inputContato{
+  width: 100%;
+  font-size: 35px;
+  border-radius: 7px;
+  background-color: transparent;
+  border: solid 4px var(--main-color);
+  color: white;
+  padding: 10px;
+}
+
+#textarea{  
+  width: 50%;
+  height: 18em;
+  border-radius: 7px;
+  padding: 15px;
+  border: solid 4px var(--main-color);
+  color: white;
+  background-color: transparent;
+  font-size: 20px;
+}
+
+
+/*Config btn contato*/
+#btnContato{
+  position: absolute;
+  width: 280px;
+  height: 40px;
+  left: 58%;
+  margin-top: 25%;
+  background-color: var(--main-color);
+  color: black;
+  font-size: 23px;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  border: 2px solid var(--main-color);
+}
+
+#mensagemConfirmacao  {
+  display: none;
+  position: absolute;
+  margin-top: 80px;
+  color: white;
+  width: 400px;
+  height: 20px;
+  left: 57%;
+  margin-top: 108px;
+  font-size: 15px;
+}
+
 /*Config Estilo Footer*/
 .footer{
-  background-color: var(--second-bg-color);
   padding: 50px 0; 
 }
 
@@ -462,6 +539,50 @@ a{
     gap: 1rem;
     opacity: 1; 
     transition: opacity 0.3s ease;
+  }
+
+  /*Config mobile section contato*/
+  #contato{
+    width: 100%;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #inputsContatoGeral{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+  }
+
+  .inputContato{
+    font-size: 20px;
+  }
+
+  #textarea{
+    width: 100%;
+    overflow: auto;
+    height: 250px;
+  }
+
+  #inputNomeEmail{
+    width: 100%;
+  }
+
+  #btnContato{
+    position: static;
+    margin-top: 0px;
+  }
+
+  #mensagemConfirmacao{
+    position: static;
+    margin-left: 28%;
+    margin-top: 15px;
   }
 
   /*Removendo o botao que volta para a posição inicial da página*/

@@ -23,6 +23,7 @@
         <a href="#home">Home</a>
         <a href="#sobre">Sobre mim</a>
         <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
       </nav>
     </header><!--Cabeçalho-->
 
@@ -64,7 +65,7 @@
     </section><!--section sobre-->
 
     <!--Projetos-->
-    <section class="projetos" id="projetos">
+    <section id="projetos">
       <h2 class="Cabecalho-projetos">Projetos</h2>
 
       <div class="projetos-container">
@@ -104,6 +105,27 @@
 
       </div><!--Projetos-container-->
     </section>
+    <!--Section Contato-->
+    <section id="contato">
+    
+      <h2>Contato</h2>
+
+      <form id="inputsContatoGeral" action="https://formsubmit.co/joaojp.araujo@gmail.com" method="POST">
+        <div id="inputNomeEmail">
+          <h3 style="font-size: 35px;">Nome</h3>
+          <input type="text" name="nome" class="inputContato" placeholder="Digite seu nome" required>
+          <h3 style="font-size: 35px;">Email</h3>
+          <input type="email" name="email" class="inputContato" placeholder="Digite seu email" required>
+        </div>
+  
+        <textarea id="textarea" name="mensagem" placeholder="Digite sua mensagem aqui:"></textarea>
+        <button id="btnContato" type="submit" onclick="confirmacao()">
+          <p>Enviar</p>
+      </button>
+      </form>
+
+    <span id="mensagemConfirmacao"></span>
+    </section><!--Section Contato-->
 
     <!--footer-->
     <footer class="footer">
@@ -133,6 +155,10 @@
         |
         <li>
           <a href="#home">Home</a>
+        </li>
+        |
+        <li>
+          <a href="#contato">Contato</a>
         </li>
         <p class="copyright">© João Pedro Rodrigues Nascimento de Araújo | Todos os direitos reservados.</p>
       </ul>
