@@ -7,6 +7,7 @@
     <link rel="icon" href="imgs/Portfolio.png" type="img/xicon">
     <link rel="stylesheet" href="style.css" />
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   </head>
   <body>
 
@@ -83,11 +84,11 @@
 
         <div class="projeto-box">
           <div class="projeto-info">
-            <img  class="img-projeto" src="imgs/img_projetos/tela_login_projeto.png" alt="img_projeto_telaLogin">
-            <h4 class="descricao">Interface gráfica tela de login</h4>
+            <img  class="img-projeto" src="imgs/img_projetos/imgCadastroProjeto.png" alt="img_projeto_telaLogin">
+            <h4 class="descricao">Interface gráfica tela de Cadastro</h4>
             <div class="btn_projeto">
-              <a class="btn" href="https://fakezeira.github.io/Tela-Login/" target="_blank">Deploy</a></button>
-              <a class="btn" href="https://github.com/fakezeira/Tela-Login" target="_blank"> Repositório</a></button>
+              <a class="btn" href="https://fakezeira.github.io/Form/" target="_blank">Deploy</a></button>
+              <a class="btn" href="https://github.com/fakezeira/Form" target="_blank"> Repositório</a></button>
             </div>
           </div>
         </div><!--Projeto-info2-->
@@ -112,6 +113,7 @@
 
       <form id="inputsContatoGeral" action="https://formsubmit.co/joaojp.araujo@gmail.com" method="POST">
         <input type="hidden" name="_next" value="https://fakezeira.github.io/thanksPage/"><!--input direcionar o usuario p/ página de agradecimento-->
+
         <div id="inputNomeEmail">
           <h3 style="font-size: 35px;">Nome</h3>
           <input type="text" name="nome" class="inputContato" placeholder="Digite seu nome" required>
@@ -120,9 +122,10 @@
         </div>
   
         <textarea id="textarea" name="mensagem" placeholder="Digite sua mensagem aqui:"></textarea>
-        <button id="btnContato" type="submit" onclick="confirmacao()">
+        <button id="btnContato" type="submit">
           <p>Enviar</p>
-      </button>
+        </button>
+        
       </form>
 
     <span id="mensagemConfirmacao"></span>
